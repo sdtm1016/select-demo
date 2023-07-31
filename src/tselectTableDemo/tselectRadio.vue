@@ -1,4 +1,3 @@
-
 <template>
   <div style="margin:20px 20px;">
     <t-select-table
@@ -47,7 +46,7 @@ export default {
     }
   },
   created() {
-
+    this.table.data = JSON.parse(JSON.stringify(this.originTableData));
   },
   methods: {
     // 单选
